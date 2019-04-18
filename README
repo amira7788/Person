@@ -1,0 +1,40 @@
+If you are using Maven, execute:
+
+./mvnw package && java -jar target/gs-spring-boot-docker-0.1.0.jar
+
+
+./mvnw install dockerfile:build
+
+#### But du repository service-socle
+Le but de ce repository est de servir d'exemple pour mettre en place rapidement un composant service
+avec les particularités netseenergy (pom parent, jenkinsfiles,...).
+
+Ce n'est pas un starter mais plutôt une doc par le code,
+sentez vous libre d'utiliser des initialiseurs existants pour mettre en place le layout
+et les dépendances spring boot.
+
+Concernant les dépendances, il faudra penser à démarrer les nouveaux composants
+en choisissant des versions plus récentes si cela est pertinent.
+
+## Environnement local
+
+### Lancement de l'application
+
+    $ mvn spring-boot:run
+
+### url
+
+http://localhost:8080/rest/api
+
+## Dockerization
+
+### construction image docker
+
+    $ mvn clean package
+
+### Lancer Docker avec variables d'environnement
+
+    $ docker run -p 8080:8080 service-person
+
+
+
