@@ -42,10 +42,7 @@ public class SwaggerConfig {
         .apis(RequestHandlerSelectors.basePackage("com.person"))
         .paths(PathSelectors.any())
         .build()
-      //  .securitySchemes(Arrays.asList(securityScheme()))
-      //  .securityContexts(Arrays.asList(securityContext()))
         .apiInfo(getApiInfo());
-      //  .useDefaultResponseMessages(false);
   }
 
   private ApiInfo getApiInfo() {
@@ -55,6 +52,7 @@ public class SwaggerConfig {
         .version("v1")
         .build();
   }
+
  /* @Bean
   public SecurityConfiguration security() {
     return SecurityConfigurationBuilder.builder()

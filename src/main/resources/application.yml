@@ -1,7 +1,9 @@
 #Application infos
-info.app.name: person
-info.app.description: Service...
-info.app.version: ${project.version}
+info:
+  app:
+    name: person
+    description: Service...
+    version: 1.0.0
 
 #Server related configurations
 server:
