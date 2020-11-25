@@ -7,7 +7,7 @@ If you are using Maven, execute:
 
 #### But du repository service-socle
 Le but de ce repository est de servir d'exemple pour mettre en place rapidement un composant service
-avec les particularités netseenergy (pom parent, jenkinsfiles,...).
+avec les particularités (pom parent, jenkinsfiles,...).
 
 Ce n'est pas un starter mais plutôt une doc par le code,
 sentez vous libre d'utiliser des initialiseurs existants pour mettre en place le layout
